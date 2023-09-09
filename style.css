@@ -101,3 +101,7 @@ h2 {
 .details-paraph{
   font-size: 20px;
 }
+
+.weather {
+  display: none;
+}
