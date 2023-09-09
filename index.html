@@ -43,14 +43,34 @@
 
       async function findWeather() {
         const response = await fetch(url);
-        console.log(url);
         const data = await response.json();
-        console.log(data);
 
         document.querySelector(".city").innerHTML = data.name;
-        document.querySelector(".temp").innerHTML = Math.trunc(data.main.temp) + "°c";
+        document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°c";
         document.querySelector(".humidity-purcent").innerHTML = data.main.humidity + "%";
         document.querySelector(".wind-speed").innerHTML = data.wind.speed + " km/h";
+
+        if (data.weather[0].main === "Clear") {
+          document.querySelector("#weather-image").src = "images/clear.png";
+        }
+        else if (data.weather[0].main === "Clouds") {
+          document.querySelector("#weather-image").src = "images/clouds.png";
+        }
+        else if (data.weather[0].main === "Rain") {
+          document.querySelector("#weather-image").src = "images/rain.png";
+        }
+        else if (data.weather[0].main === "Mist") {
+          document.querySelector("#weather-image").src = "images/mist.png";
+        }
+        else if (data.weather[0].main === "Drizzle") {
+          document.querySelector("#weather-image").src = "images/rain.png";
+        }
+        else if (data.weather[0].main === "Thunderstorm") {
+          document.querySelector("#weather-image").src = "images/drizzle.png";
+        }
+        else {
+          document.querySelector("#weather-image").src = "images/snow.png";
+        }
       }
 
       function getCity() {
