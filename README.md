@@ -3,6 +3,7 @@
 Une application météo simple développée en HTML, CSS, et JavaScript, permettant aux utilisateurs de consulter la météo actuelle d'une ville donnée.
 
 ⚙️ Fonctionnalités
+
 Recherche par Ville :
 Les utilisateurs peuvent entrer le nom de la ville dans le champ de recherche.
 En appuyant sur le bouton de recherche, les détails météorologiques de la ville sont affichés grâce à l'API de OpenWeatherMap.
