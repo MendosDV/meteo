@@ -15,7 +15,11 @@ L'humidité de l'air et la vitesse du vent sont également indiquées.
 Affichage de l'Image Météorologique :
 Une icône représentant les conditions météorologiques actuelles (clair, nuageux, pluvieux, etc.) est affichée.
 
+<img width="558" alt="Montréal" src="https://github.com/MendosDV/meteo/assets/130302103/113c1611-51ac-4982-9743-bba91792ffb1">
+<img width="485" alt="Paris" src="https://github.com/MendosDV/meteo/assets/130302103/e3aa970b-ccea-4b4a-a93a-7b39a6879a07">
+
 👨‍💻 Technologies utilisées 
+
 
 - HTML
 - CSS
